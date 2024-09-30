@@ -29,6 +29,8 @@ func setupRouter() *gin.Engine {
 		}
 	})
 
+	// gin.BasicAuth()是一个中间件函数，用于实现基本的 HTTP 身份验证（Basic Authentication）。
+
 	// Authorized group (uses gin.BasicAuth() middleware)
 	// Same than:
 	// authorized := r.Group("/")

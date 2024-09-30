@@ -9,6 +9,7 @@ import (
 )
 
 func main() {
+	//直接获os中的环境变量PORT
 	port := os.Getenv("PORT")
 
 	if port == "" {

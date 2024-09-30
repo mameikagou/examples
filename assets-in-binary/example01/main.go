@@ -9,6 +9,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// A template for create a web server by HTML templates.
 func main() {
 	r := gin.New()
 	t, err := loadTemplate()
