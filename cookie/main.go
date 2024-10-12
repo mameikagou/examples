@@ -11,7 +11,7 @@ func CookieTool() gin.HandlerFunc {
 		// Get cookie
 		if cookie, err := c.Cookie("label"); err == nil {
 			if cookie == "ok" {
-				c.Next()
+				c.Next() // 暂停之后进入下一个中间件
 				return
 			}
 		}
